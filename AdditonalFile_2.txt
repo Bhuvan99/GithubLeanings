@@ -1,0 +1,62 @@
+C:\Users\bhuvanj\eclipse-workspace\Github
+https://github.com/Vaayuputra99/LearnTesting
+https://github.com/Vaayuputra99/LearnTesting.git
+
+git init
+git remote add origin https://github.com/Vaayuputra99/LearnTesting.git
+git clone https://github.com/Vaayuputra99/LearnTesting.git
+git remote -v
+git push origin Master
+
+//creating new branch and changing to the respective branch
+git branch <branchName>
+git branch newFeature
+
+git checkout <branchName>
+git checkout newFeature
+git commit -m "Commited NewFeatures" --> Now whatever the changes updated will be update to newFeature branch
+
+
+
+To add all files in the staging area
+>> git add .
+// Check whether it is added
+>> git status
+
+// It is in staging area, we need to commit the changes
+// With Messages
+>> git commit -m "Committed"
+// Without Messages
+>> git commit
+	
+
+// To see which branch your local branch is tracking from the remote, run:
+>> git branch -vv
+
+// After staged (git add .), suppose if to unstage the staged documents/changes
+>> git restore --staged <staged_FileName.type>
+>> git restore --staged AdditionalFile.txt
+
+//To see the history in cmd prompt
+git log --oneline
+
+// To uncommit the error one. The committed Id could be taken from "git log"
+>> git reset <commited ID>
+
+Note: The committed ids will be in the order as 
+1 - commit 1
+2 - commit 2
+3 - coomit 3
+
+1 is the base for 2 & 3. So, if base 1 is deleted, then commit 2 & 3 will also be deleted.
+It is like the chain of action.
+
+
+// To create new branch
+>> git branch <branchname>
+>> git branch newFeatures
+// To change into another branch
+>> git checkout <branchname>
+>> git checkout newFeatures
+
+
